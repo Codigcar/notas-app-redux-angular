@@ -1,0 +1,6 @@
+<ul class="todo-list">
+  <app-nota-item
+    *ngFor="let nota of notas | filtroPipe: filtroActual"
+    [notaChild]="nota"
+  ></app-nota-item>
+</ul>
